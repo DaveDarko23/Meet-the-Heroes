@@ -1,0 +1,85 @@
+:root {
+  --primary-color: #f4f6f7;
+  --seondary-color: #f4d03f;
+  --screen-height: 100vh;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+.size-screen {
+  width: 100%;
+  height: var(--screen-height);
+}
+
+.title {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.title a {
+  text-decoration: none;
+  color: #000;
+}
+
+.firts-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.firts-section h2 {
+  margin: 1rem;
+}
+
+.shape-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.second-section {
+  height: 50vh;
+  position: relative;
+}
+
+#map {
+  height: inherit;
+  z-index: 0;
+}
+
+input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  z-index: 1;
+}
+
+.third-section {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.third-section .counter {
+  letter-spacing: 1rem;
+}
