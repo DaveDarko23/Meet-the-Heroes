@@ -9,6 +9,7 @@ import map, {
 const $d = document;
 
 $d.addEventListener("DOMContentLoaded", (e) => {
+  console.log(innerWidth);
   map();
   getClap();
   getCountry();
@@ -30,30 +31,10 @@ $d.addEventListener("change", (e) => {
 addEventListener("resize", (e) => {
   const $shape = $d.querySelector(".shape-title");
 
-  /*if (innerHeight < 400) {
-    $shape.setAttribute("viewBox", "50 10 75 100");
-    return;
-  }
-
-  if (innerHeight < 400) {
-    $shape.setAttribute("viewBox", "50 10 75 100");
-    return;
-  }
-
-  if (innerHeight < 400) {
-    $shape.setAttribute("viewBox", "50 10 75 100");
-    return;
-  }
-
-  if (innerHeight < 400) {
-    $shape.setAttribute("viewBox", "50 10 75 100");
-    return;
-  }*/
-
-  if (innerHeight < 400) $shape.setAttribute("viewBox", "50 10 75 100");
+  /*if (innerHeight < 400) $shape.setAttribute("viewBox", "50 0 75 100");
   else if (innerWidth < 600) $shape.setAttribute("viewBox", "50 10 50 100");
   else if (innerWidth < 1000) $shape.setAttribute("viewBox", "50 10 200 100");
-  else if (innerWidth < 1200) $shape.setAttribute("viewBox", "50 10 30 100");
+  else if (innerWidth < 1200) $shape.setAttribute("viewBox", "50 10 30 100");*/
 
   console.log("ViewBox", $shape.getAttribute("viewBox"));
   // location(Math.random(), Math.random());

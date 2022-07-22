@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #f4f6f7;
+  --primary-color: #fff;
   --seondary-color: #f4d03f;
   --screen-height: 100vh;
 }
@@ -33,7 +33,7 @@ body {
 
 .title {
   font-family: helveticaa;
-  font-size: 120px;
+  font-size: 3rem;
   text-align: center;
   padding: 1rem 0;
 }
@@ -45,21 +45,39 @@ body {
 
 .subtitle {
   font-family: helveticaa;
-  font-size: 30px;
+  font-size: 1.5rem;
   text-align: center;
   padding: 1rem 0;
 }
 
 .title-Centros {
   font-family: helveticaa;
-  font-size: 90px;
+  font-size: 2rem;
   text-align: center;
   padding: 1rem 0;
 }
 
+/* Primera seccion ******************************************************************************** */
+
 .firts-section {
   position: relative;
   overflow: hidden;
+}
+
+.firts-section .info {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.firts-section .logo {
+  width: 40%;
+  max-width: 250px;
+  margin-top: 3vh;
+  margin-left: 3vw;
 }
 
 .firts-section h2 {
@@ -70,6 +88,18 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -2;
+}
+
+.imagen1 {
+  visibility: hidden;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 60%;
+  max-width: 250px;
+  height: auto;
+  margin-top: 2rem;
   z-index: -1;
 }
 
@@ -110,23 +140,15 @@ input {
   -moz-border-radius: 13;
   border-radius: 10px;
   font-family: Arial;
-  color: #8C0F61;
+  color: #8c0f61;
   font-size: 13px;
-  background: #F29F05;
+  background: #f29f05;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
 }
 
 .clap-button:hover {
   text-decoration: none;
-}
-
-.imagen1 {
-  width: 600px;
-  height: 600px; 
-  margin-top: 100px;
-  margin-left: 250px; 
-  float: left; 
 }
 
 .btns-card {
@@ -143,5 +165,23 @@ input {
   cursor: pointer;
 }
 
+main {
+  background-color: var(--primary-color);
+}
 
+@media screen and (min-width: 800px) {
+  .imagen1 {
+    visibility: visible;
+    max-width: 300px;
+    top: 20%;
+    left: 10%;
+  }
 
+  .firts-section .info {
+    width: 40%;
+    position: absolute;
+    right: 5rem;
+    top: 0;
+    bottom: 0;
+  }
+}
