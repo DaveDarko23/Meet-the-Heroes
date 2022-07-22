@@ -17,7 +17,6 @@
   </head>
   <body>
 
-    
     <section class="size-screen firts-section">
       <!-- <img class="shape-title" src="assets/graph.png" alt="Forma-Titulo" /> -->
       
@@ -35,30 +34,54 @@
       <img class="logo" src="https://www.astrazeneca.mx/etc/designs/az/img/logo-az.png" alt="Logo AstraZeneca">
       
       <section class="title info">
-        <h1 class="title">Conoce a los Héroes</h1>
+        <h1>Conoce a los Héroes</h1>
         <a class="subtitle" href="#section-2">Encuentralos aquí</a>
       </section>
     </section>
 
     <main class="size-screen">
-      <h2 id="section-2" class="title-Centros">Centros de Investigación</h2>
-      <select class="country-selector" name="pais">
-        <option value="Elegir" id="AF">Elegir opción</option>
-      </select>
-      <section class="second-section">
-        <div id="map"></div>
-        <input type="search" placeholder="Ingrese Pais..." />
+      <section id="section-2" class="size-screen">
+        <aside class="info-modal">
+          <section class="info-screen">
+            <h2>Centro de Investigación</h2>
+            <section class="slider">
+              <section class="slider-slides">
+              </section>
+              <div class="slider-btns">
+                <a href="#" class="prev">&laquo;</a>
+                <a href="#" class="next">&raquo;</a>
+              </div>
+            </section>
+            <button>Cerrar</button>
+          </section>
+        </aside>
+        <h2  class="title-Centros">Centros de Investigación</h2>
+          <section class="second-section">
+            <div id="map"></div>
+            <input type="search" placeholder="Ingrese Pais..." />
+            <select class="country-selector" name="pais">
+              <option value="Elegir" id="AF" class="options">Tipo de Estudio</option>
+            </select>
+          </section>
       </section>
 
-      <h2 class="title">Aplausos</h2>
-      <section class="third-section">
-        <h3 class="counter">00000</h3>
-        <button class="clap-button">Agradecer</button>
+      <section class="size-screen">
+        <h2 class="title">Aplausos</h2>
+        <section class="third-section">
+          <h3 class="counter">00000</h3>
+          <button class="clap-button">Agradecer</button>
+        </section>
       </section>
+      
     </main>
 
     <template id="option-template">
       <option class="options""></option>
+    </template>
+
+    <template id="modal">
+      <h3 class="modal-title"></h3>
+      <p class="modal-text"></p>
     </template>
 
     <script

@@ -35,7 +35,7 @@ body {
   font-family: helveticaa;
   font-size: 3rem;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1rem;
 }
 
 .title a {
@@ -54,7 +54,7 @@ body {
   font-family: helveticaa;
   font-size: 2rem;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1rem;
 }
 
 /* Primera seccion ******************************************************************************** */
@@ -109,7 +109,7 @@ body {
 }
 
 #map {
-  height: inherit;
+  height: 60vh;
   z-index: 0;
 }
 
@@ -123,11 +123,96 @@ input {
   z-index: 1;
 }
 
-.third-section {
+.info-modal {
+  width: inherit;
+  height: inherit;
+  background-color: rgba(34, 34, 34, 0.85);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.info-screen {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  width: 80%;
+  height: 90vh;
+  margin: 5vh auto;
+  background-color: #fff;
+  border-radius: 1rem;
+  justify-content: space-evenly;
   align-items: center;
+}
+
+.info-study {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 1rem;
+  overflow-y: scroll;
+  padding: 0 5rem;
+  opacity: 1;
+  visibility: hidden;
+  display: none;
+}
+
+.info-study.onFocus {
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+}
+
+.info-study p,
+.info-study h3 {
+  width: 50%;
+  padding: 1rem;
+  overflow-wrap: break-word;
+}
+
+.info-screen button {
+  align-self: flex-end;
+  margin: 1rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.info-screen h2 {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.country-selector {
+  width: 50%;
+  max-width: 200px;
+
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  margin: 0.5rem;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  z-index: 1;
+}
+
+.third-section {
+  height: calc(100vh - 5.5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   text-align: center;
 }
 
@@ -136,15 +221,13 @@ input {
 }
 
 .clap-button {
-  -webkit-border-radius: 13;
-  -moz-border-radius: 13;
   border-radius: 10px;
   font-family: Arial;
+  font-weight: 800;
   color: #8c0f61;
-  font-size: 13px;
   background: #f29f05;
   padding: 10px 20px 10px 20px;
-  text-decoration: none;
+  cursor: pointer;
 }
 
 .clap-button:hover {
@@ -165,6 +248,72 @@ input {
   cursor: pointer;
 }
 
+.slider {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.slider-slides {
+  position: inherit;
+  height: 400px;
+}
+
+.slider-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  display: block;
+  transition: all 1s ease;
+}
+
+.slider-slide.active {
+  opacity: 1;
+  visibility: visible;
+  display: none;
+}
+
+.slider-btns {
+  position: absolute;
+  width: 95%;
+  top: calc(50% - 2rem);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.slider-btns .next {
+  position: absolute;
+  right: -9rem;
+}
+
+.slider-btns .prev {
+  position: absolute;
+  left: -6rem;
+}
+
+.slider a {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: thin solid #000;
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  transition: color 0.3 ease;
+}
+
+.slider a:hover {
+  color: #4d4d4d;
+}
+
 main {
   background-color: var(--primary-color);
 }
@@ -183,5 +332,10 @@ main {
     right: 5rem;
     top: 0;
     bottom: 0;
+  }
+
+  #map {
+    height: 70vh;
+    z-index: 0;
   }
 }

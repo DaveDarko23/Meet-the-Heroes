@@ -1,9 +1,11 @@
 import { clap, getClap } from "./modules/clap.js";
 import map, {
-  location,
   getCountry,
   sendOptionData,
   modalStudy,
+  closeModal,
+  clearMap,
+  sliderStudies,
 } from "./modules/mapa.js";
 
 const $d = document;
@@ -16,15 +18,18 @@ $d.addEventListener("DOMContentLoaded", (e) => {
 });
 
 $d.addEventListener("click", (e) => {
+  console.log("click?");
   clap(".clap-button", e);
-
+  sliderStudies(e);
   modalStudy(e);
+  closeModal(e);
   // location(Math.random(), Math.random());
 });
 
 $d.addEventListener("change", (e) => {
   const $option = $d.querySelector(".country-selector");
 
+  clearMap(e);
   if (e.target === $option) sendOptionData(e.target.value);
 });
 
