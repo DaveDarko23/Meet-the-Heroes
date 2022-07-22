@@ -1,38 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AstraZeneca - Meet the Heroes</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
-      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
-      crossorigin=""
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-
-    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
-  </head>
-  <body>
-
-    
-    <section class="size-screen firts-section">
-      <!-- <img class="shape-title" src="assets/graph.png" alt="Forma-Titulo" /> -->
-
-<svg class = "shape-title" id="sw-js-blob-svg" viewBox="50 40 75 100" xmlns="http://www.w3.org/2000/svg" version="1.1">
-  <defs> 
-      <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
-          <stop id="stop1" stop-color="rgba(243, 198, 119, 1)" offset="0%"></stop>
-          <stop id="stop2" stop-color="rgba(243, 198, 119, 1)" offset="100%"></stop>
-      </linearGradient>
-  </defs>
-<path fill="url(#sw-gradient)" d="M12.3,-19C17.4,-18.5,23.9,-18,29.3,-14.8C34.8,-11.7,39.2,-5.8,37.3,-1.1C35.4,3.6,27.1,7.3,22,11C16.9,14.7,14.8,18.5,11.7,23.1C8.6,27.7,4.3,33.1,-1.6,35.8C-7.4,38.5,-14.8,38.5,-18.4,34.2C-22,29.8,-21.9,21.2,-22.5,14.8C-23.1,8.4,-24.4,4.2,-24,0.3C-23.5,-3.7,-21.2,-7.3,-20.7,-13.8C-20.1,-20.3,-21.3,-29.6,-18.1,-31.2C-15,-32.9,-7.5,-26.8,-1.9,-23.5C3.6,-20.2,7.3,-19.6,12.3,-19Z" width="100%" height="100%" transform="translate(50 50)" style="transition: all 0.3s ease 0s;" stroke-width="0" stroke="url(#sw-gradient)"></path>
-</svg>
-
-      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1700 113.9" style="enable-background:new 0 0 344.5 113.9;" xml:space="preserve">
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 344.5 113.9" style="enable-background:new 0 0 344.5 113.9;" xml:space="preserve">
 	<style type="text/css">
 		.Arched_x0020_Green{fill:url(#SVGID_1_);stroke:#FFFFFF;stroke-width:0.25;stroke-miterlimit:1;}
 		.st0{fill:#860052;}
@@ -80,41 +49,3 @@
 			c-0.5,0-1.1,0.1-1.4,0.1c0.9-0.8,1.8-1.5,2.3-1.9c7.5-5.3,20-12.7,23.7-15.9C312.6,56.8,320,49.6,304.1,44.1z"/>
 	</g>
 </svg>
-
-      <img class = "imagen1" src="assets/img1.png" >
-
-      <section class="title">
-        <h1 class="title">Conoce a los Héroes</h1>
-        <a class="subtitle" href="#section-2">Encuentralos aquí</a>
-      </section>
-    </section>
-
-    <main class="size-screen">
-      <h2 id="section-2" class="title-Centros">Centros de Investigación</h2>
-      <select class="country-selector" name="pais">
-        <option value="Elegir" id="AF">Elegir opción</option>
-      </select>
-      <section class="second-section">
-        <div id="map"></div>
-        <input type="search" placeholder="Ingrese Pais..." />
-      </section>
-
-      <h2 class="title">Aplausos</h2>
-      <section class="third-section">
-        <h3 class="counter">00000</h3>
-        <button class="clap-button">Agradecer</button>
-      </section>
-    </main>
-
-    <template id="option-template">
-      <option class="options""></option>
-    </template>
-
-    <script
-      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
-      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
-      crossorigin=""
-    ></script>
-    <script src="js/app.js" type="module"></script>
-  </body>
-</html>

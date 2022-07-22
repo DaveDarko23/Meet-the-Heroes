@@ -17,6 +17,11 @@ html {
   margin: 0;
 }
 
+@font-face {
+  font-family: helveticaa;
+  src: url(Helveticaa.ttf);
+}
+
 body {
   background-color: var(--primary-color);
 }
@@ -27,6 +32,8 @@ body {
 }
 
 .title {
+  font-family: helveticaa;
+  font-size: 120px;
   text-align: center;
   padding: 1rem 0;
 }
@@ -34,6 +41,20 @@ body {
 .title a {
   text-decoration: none;
   color: #000;
+}
+
+.subtitle {
+  font-family: helveticaa;
+  font-size: 30px;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.title-Centros {
+  font-family: helveticaa;
+  font-size: 90px;
+  text-align: center;
+  padding: 1rem 0;
 }
 
 .firts-section {
@@ -83,3 +104,44 @@ input {
 .third-section .counter {
   letter-spacing: 1rem;
 }
+
+.clap-button {
+  -webkit-border-radius: 13;
+  -moz-border-radius: 13;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #8C0F61;
+  font-size: 13px;
+  background: #F29F05;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.clap-button:hover {
+  text-decoration: none;
+}
+
+.imagen1 {
+  width: 600px;
+  height: 600px; 
+  margin-top: 100px;
+  margin-left: 250px; 
+  float: left; 
+}
+
+.btns-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-showmore {
+  border-radius: 0.5rem;
+  background-color: #454545;
+  padding: 0.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
