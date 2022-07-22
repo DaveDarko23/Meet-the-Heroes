@@ -1,5 +1,10 @@
 import { clap, getClap } from "./modules/clap.js";
-import map, { location, getCountry } from "./modules/mapa.js";
+import map, {
+  location,
+  getCountry,
+  sendOptionData,
+  modalStudy,
+} from "./modules/mapa.js";
 
 const $d = document;
 
@@ -7,26 +12,23 @@ $d.addEventListener("DOMContentLoaded", (e) => {
   map();
   getClap();
   getCountry();
-
-  console.log(innerWidth);
 });
 
 $d.addEventListener("click", (e) => {
-  console.log(e.target);
   clap(".clap-button", e);
 
+  modalStudy(e);
   // location(Math.random(), Math.random());
 });
 
 $d.addEventListener("change", (e) => {
-  console.log(e.target);
+  const $option = $d.querySelector(".country-selector");
 
-  // location(Math.random(), Math.random());
+  if (e.target === $option) sendOptionData(e.target.value);
 });
 
 addEventListener("resize", (e) => {
   const $shape = $d.querySelector(".shape-title");
-  console.log(innerWidth);
 
   /*if (innerHeight < 400) {
     $shape.setAttribute("viewBox", "50 10 75 100");
