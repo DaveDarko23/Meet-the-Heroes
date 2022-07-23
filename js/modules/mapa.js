@@ -24,7 +24,8 @@ export function location(study, index) {
   <p><b>Año de publicación: </b> ${study.date_registration}</p>
   <div class="btns-card">
   <a href="https://www.google.com/maps/@${study.address.lat},${study.address.lng},16z" target="_blank" rel="noopener">Ver en Google Maps</a>
-  <button class="btn-showmore" id="btn-${index}" >Ver más</button>
+  <button  class="button-showmore" id="btn-${index}">Ver más&nbsp;➜</a>
+  
   </div>
   `);
 

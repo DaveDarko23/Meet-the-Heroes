@@ -55,6 +55,27 @@ body {
   padding: 1rem 0;
 }
 
+.button-FindThem {
+  text-decoration:none; 
+  text-align:center; 
+  padding:11px 32px; 
+  border:solid 2px #000000; 
+  border-radius: 17px; 
+  font:18px Arial, Helvetica, sans-serif; 
+  color:#000000; 
+  background-color:transparent;  
+   
+}
+
+.button-FindThem:hover {
+  padding:11px 32px; 
+  border:solid 2px #8C0F61; 
+  border-radius: 17px; 
+  font:18px Arial, Helvetica, sans-serif; 
+  color: #8C0F61;
+  background: transparent; 
+}
+
 .title-Centros {
   font-family: helveticaa;
   font-size: 2rem;
@@ -254,12 +275,27 @@ input {
   justify-content: space-between;
 }
 
-.btn-showmore {
-  border-radius: 0.5rem;
-  background-color: #454545;
-  padding: 0.5rem;
-  color: #fff;
+.button-showmore{
+  width: 80px;
+  border: none;
+  padding:11px 12px; 
+  border-radius: 17px; 
+  font:10px Arial, Helvetica, sans-serif; 
+  font-weight:bold; 
+  color:#ffffff; 
+  background:#bf78a6; 
   cursor: pointer;
+}
+
+.button-showmore:hover{
+  padding:11px 11px;
+  border:none; 
+  border-radius: 17px; 
+  font:10px Arial, Helvetica, sans-serif; 
+  font-weight:bold; 
+  color:#ffffff; 
+  background:#cc8adb;  
+  box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
 }
 
 .slider {
@@ -370,6 +406,7 @@ input {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
+
 .button:hover {
   padding: 11px 32px;
   border: none;
@@ -411,16 +448,6 @@ input {
   }
 }
 
-/* .button:active {
-  padding: 11px 32px;
-  border: none;
-  border-radius: 17px;
-  font: 18px "Lucida Console", Monaco, monospace;
-  font-weight: bold;
-  color: #faf6ed;
-  background: #d90472;
-  box-shadow: 4px 4px 1px #bababa, inset 0px 0px 1px #ffffff;
-} */
 .third-section p {
   text-align: justify;
   width: 80%;
