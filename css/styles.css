@@ -56,24 +56,23 @@ body {
 }
 
 .button-FindThem {
-  text-decoration:none; 
-  text-align:center; 
-  padding:11px 32px; 
-  border:solid 2px #000000; 
-  border-radius: 17px; 
-  font:18px Arial, Helvetica, sans-serif; 
-  color:#000000; 
-  background-color:transparent;  
-   
+  text-decoration: none;
+  text-align: center;
+  padding: 11px 32px;
+  border: solid 2px #000000;
+  border-radius: 17px;
+  font: 18px Arial, Helvetica, sans-serif;
+  color: #000000;
+  background-color: transparent;
 }
 
 .button-FindThem:hover {
-  padding:11px 32px; 
-  border:solid 2px #8C0F61; 
-  border-radius: 17px; 
-  font:18px Arial, Helvetica, sans-serif; 
-  color: #8C0F61;
-  background: transparent; 
+  padding: 11px 32px;
+  border: solid 2px #8c0f61;
+  border-radius: 17px;
+  font: 18px Arial, Helvetica, sans-serif;
+  color: #8c0f61;
+  background: transparent;
 }
 
 .title-Centros {
@@ -238,8 +237,12 @@ input {
   z-index: 1;
 }
 
+.blur {
+  background-color: #00000010;
+}
+
 .third-section {
-  height: calc(100vh - 5.5rem);
+  height: calc(100vh - 8rem);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -248,6 +251,8 @@ input {
 }
 
 .third-section .counter {
+  font-family: helveticaa;
+
   font-size: 2rem;
   letter-spacing: 2rem;
   margin-right: -2rem;
@@ -259,7 +264,6 @@ input {
   border-radius: 10px;
   font-family: Arial;
   font-weight: 800;
-  color: #8c0f61;
   background: #f29f05;
   padding: 10px 20px 10px 20px;
   cursor: pointer;
@@ -267,6 +271,7 @@ input {
 
 .clap-button:hover {
   text-decoration: none;
+  color: #8c0f61;
 }
 
 .btns-card {
@@ -275,27 +280,27 @@ input {
   justify-content: space-between;
 }
 
-.button-showmore{
+.button-showmore {
   width: 80px;
   border: none;
-  padding:11px 12px; 
-  border-radius: 17px; 
-  font:10px Arial, Helvetica, sans-serif; 
-  font-weight:bold; 
-  color:#ffffff; 
-  background:#bf78a6; 
+  padding: 11px 12px;
+  border-radius: 17px;
+  font: 10px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  background: #bf78a6;
   cursor: pointer;
 }
 
-.button-showmore:hover{
-  padding:11px 11px;
-  border:none; 
-  border-radius: 17px; 
-  font:10px Arial, Helvetica, sans-serif; 
-  font-weight:bold; 
-  color:#ffffff; 
-  background:#cc8adb;  
-  box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
+.button-showmore:hover {
+  padding: 11px 11px;
+  border: none;
+  border-radius: 17px;
+  font: 10px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  background: #cc8adb;
+  box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
 }
 
 .slider {
@@ -304,28 +309,27 @@ input {
   margin: 0 auto;
 }
 
- .button-Close{
-  padding:11px 32px; 
+.button-Close {
+  padding: 11px 32px;
   margin-right: 2rem;
-  border: none; 
-  border-radius: 17px; 
-  font:18px "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
-  font-weight:bold; 
-  color:#ffffff; 
-  background:#D90479; 
+  border: none;
+  border-radius: 17px;
+  font: 18px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  background: #d90479;
   box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
   cursor: pointer;
-  
-} 
+}
 
-.button-Close:hover{
-  padding:11px 32px; 
-  border: none; 
-  border-radius: 17px; 
-  font:18px "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
-  font-weight:bold; 
-  color:#ffffff; 
-  background:#e0539e; 
+.button-Close:hover {
+  padding: 11px 32px;
+  border: none;
+  border-radius: 17px;
+  font: 18px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  background: #e0539e;
   box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
 }
 
@@ -373,7 +377,7 @@ input {
   left: -6rem;
 }
 
-.slider .next, 
+.slider .next,
 .slider.prev {
   display: block;
   width: 4rem;
@@ -383,7 +387,7 @@ input {
   transition: color 0.3 ease;
 }
 
-.slider .next:hover, 
+.slider .next:hover,
 .slider .prev:hover {
   color: #4d4d4d;
 }
@@ -404,29 +408,21 @@ input {
   background: #f29f05;
   box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease;
 }
 
 .button:hover {
-  padding: 11px 32px;
-  border: none;
-  border-radius: 17px;
-  font: 18px "Lucida Console", Monaco, monospace;
-  font-weight: bold;
-  color: #faf6ed;
   background: #d90479;
-  box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
 }
 
 .button:hover span {
-  color: red;
   font-size: 1.5rem;
-  animation: pulsaciones 3s linear infinite alternate both;
+  animation: pulsaciones 2s linear infinite alternate both;
 }
 
 @keyframes pulsaciones {
   0% {
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
 
   50% {
@@ -447,12 +443,16 @@ input {
     opacity: 0;
   }
 }
-
 .third-section p {
+  font-family: helveticaThin;
   text-align: justify;
   width: 80%;
   max-width: 430px;
   font-size: 1.3rem;
+}
+
+.heroes {
+  font-size: 1.5rem;
 }
 
 @keyframes spinner {
@@ -511,5 +511,9 @@ input {
 
   h1 {
     font-size: 4rem;
+  }
+
+  .heroes {
+    font-size: 2rem;
   }
 }

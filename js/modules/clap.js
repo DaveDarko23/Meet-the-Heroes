@@ -24,6 +24,8 @@ export function clap(element, e) {
     url,
     method: "PUT",
     success: (res) => {
+      const $title = document.querySelector(".heroes");
+      $title.textContent = "¡Muchas Gracias!";
       refreshCounter((parseInt($counter.textContent) + 1).toString());
     },
   });
