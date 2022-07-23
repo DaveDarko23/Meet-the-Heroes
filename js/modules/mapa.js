@@ -117,7 +117,12 @@ function printStudy(study, index) {
 
   studyKeys.forEach((study, index) => {
     $template.querySelector(".modal-title").textContent = study;
-    $template.querySelector(".modal-text").textContent = studyValues[index];
+    study !== "Dirección web"
+      ? ($template.querySelector(".modal-text").textContent =
+          studyValues[index])
+      : ($template.querySelector(".modal-text").innerHTML = `
+        <a href="${studyValues[index]} rel="noopener" target="_blank">Visitar Página Web</a>
+      `);
 
     let $clone = $d.importNode($template, true);
     $fragment.appendChild($clone);
