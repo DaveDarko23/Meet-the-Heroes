@@ -175,7 +175,6 @@ input {
   align-items: center;
   text-align: center;
   font-size: 1rem;
-  overflow-y: scroll;
   padding: 0 5rem;
   opacity: 1;
   visibility: hidden;
@@ -406,6 +405,33 @@ input {
   width: 80%;
   max-width: 430px;
   font-size: 1.3rem;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  width: 5vw;
+  height: 5vw;
+  margin: 5px auto;
+  border-radius: 50%;
+  border: 0.5vw solid rgba(0, 0, 0, 0.3);
+  border-left-color: #09f;
+  animation: spinner 1s linear infinite;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.spinner.onVisible {
+  opacity: 1;
+  visibility: visible;
 }
 
 @media screen and (min-width: 800px) {

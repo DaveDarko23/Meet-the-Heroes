@@ -132,6 +132,9 @@ export function sendOptionData(data, success) {
     Method: "GET",
     success: (res) => {
       resGlobal = res;
+      const $spinner = $d.querySelector(".spinner");
+      $spinner.classList.remove("onVisible");
+
       console.log(res);
       res.forEach((study, index) => location(study, index));
     },

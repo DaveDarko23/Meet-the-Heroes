@@ -27,7 +27,10 @@ $d.addEventListener("click", (e) => {
 });
 
 $d.addEventListener("change", (e) => {
-  const $option = $d.querySelector(".country-selector");
+  const $option = $d.querySelector(".country-selector"),
+    $spinner = $d.querySelector(".spinner");
+
+  $spinner.classList.add("onVisible");
 
   clearMap(e);
   if (e.target === $option) sendOptionData(e.target.value);
@@ -51,4 +54,8 @@ addEventListener("resize", (e) => {
 
   console.log("ViewBox", $shape.getAttribute("viewBox"));
   // location(Math.random(), Math.random());
+});
+
+addEventListener("scroll", (e) => {
+  console.log(e);
 });
