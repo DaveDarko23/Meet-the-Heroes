@@ -197,9 +197,6 @@ input {
 
 .info-screen button {
   align-self: flex-end;
-  margin: 1rem;
-  padding: 0.3rem 0.5rem;
-  border-radius: 0.3rem;
 }
 
 .info-screen h2 {
@@ -271,6 +268,31 @@ input {
   margin: 0 auto;
 }
 
+ .button-Close{
+  padding:11px 32px; 
+  margin-right: 2rem;
+  border: none; 
+  border-radius: 17px; 
+  font:18px "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+  font-weight:bold; 
+  color:#ffffff; 
+  background:#D90479; 
+  box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+  cursor: pointer;
+  
+} 
+
+.button-Close:hover{
+  padding:11px 32px; 
+  border: none; 
+  border-radius: 17px; 
+  font:18px "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+  font-weight:bold; 
+  color:#ffffff; 
+  background:#e0539e; 
+  box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+}
+
 .slider-slides {
   position: inherit;
   height: 400px;
@@ -315,19 +337,18 @@ input {
   left: -6rem;
 }
 
-.slider a {
+.slider .next, 
+.slider.prev {
   display: block;
   width: 4rem;
   height: 4rem;
-  border-radius: 50%;
-  border: thin solid #000;
   text-decoration: none;
-  background-color: #fff;
   color: #000;
   transition: color 0.3 ease;
 }
 
-.slider a:hover {
+.slider .next:hover, 
+.slider .prev:hover {
   color: #4d4d4d;
 }
 
